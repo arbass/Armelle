@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru-gb" xml:lang="ru-gb" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--[if lt IE 9]> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/font-awesome/css/font-awesome.min.css" type="text/css">
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="font-awesome/font-awesome/css/font-awesome-ie7.min.css" type="text/css">
+    <![endif]-->
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="masterslider/style/masterslider.css" type="text/css">
+    <link rel="stylesheet" href="masterslider/skins/light-6/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/mobile.css" type="text/css">
+    <link href="styles/lightbox.css" type="text/css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    
+    <title>Бизнес с Армель</title>
+</head>
+
+<body>
+    
+    <style>
+        .thankyou {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -202px;
+            margin-top: -124.5px;
+            width: 404px;
+            height: 249px;
+            text-align: center;
+        }
+
+        .thankyou h1 {
+            font-size: 38px;
+            color: #E82F4F;
+            margin: 0;
+            margin-bottom: 17px;
+            font-weight: 700;
+        }
+
+        .thankyou p {
+            font-size: 20px;
+            color: #272727;
+            margin: 0;
+            margin-bottom: 48px;
+            font-weight: 400;
+        }
+
+        .thankyou a {
+            display: block;
+            width: 352px;
+            height: 53px;
+            border-radius: 5px;
+            background-color: #CA556E;
+            font-size: 20px;
+            color: #ffffff;
+            margin: 0 auto;
+            font-weight: 700;
+            text-decoration: none;
+            line-height: 2.5;
+        }
+
+        .thankyou a:hover {
+            background-color: #D37388;
+        }
+
+        }
+    </style>
+
+    <div class="thankyou">  
+        <h1>Спасибо большое за Вашу заявку!</h1>
+        <p>Мы скоро свяжемся с Вами.</p>
+        <br>
+        <a href="http://armellebiz52.ru/">Вернуться на главную страницу</a>
+    </div>
+
+
+    
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="masterslider/masterslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/placeholder-fallback.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- popup form -->
+<script type="text/javascript">
+
+$(function(){
+    $('.close').click(function(){
+       $('.popup_modal').bPopup().close();
+    });
+});
+$('.show_modal').click(function(){
+        $('#form_modals').bPopup({
+            speed: 650,
+            transition: 'slideIn'
+        });
+     });
+</script>    
+
+<script>
+    $(document).ready(function() { 
+
+    (function ($) { 
+        $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+        
+        $('.tab ul.tabs li a').click(function (g) { 
+            var tab = $(this).closest('.tab'), 
+                index = $(this).closest('li').index();
+            
+            tab.find('ul.tabs > li').removeClass('current');
+            $(this).closest('li').addClass('current');
+            
+            tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+            tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+            
+            g.preventDefault();
+        } );
+    })(jQuery);
+
+});
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46121712 = new Ya.Metrika({
+                    id:46121712,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46121712" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'Qn6NpSLbGs';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+</body>
+</html>
